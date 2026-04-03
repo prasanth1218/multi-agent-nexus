@@ -18,7 +18,7 @@ class Settings(BaseSettings):
     # Database
     database_path: str = "data/agents.db"
     # Server
-    cors_origins: list[str] = ["http://localhost:5173", "http://localhost:3000", "http://localhost:5174"]
+    cors_origins: list[str] = ["http://localhost:5173", "http://localhost:3000", "http://localhost:5174", "https://multi-agent-nexus.vercel.app"]
     model_config = {"env_file": ".env", "env_file_encoding": "utf-8"}
 
 def get_settings() -> Settings:
