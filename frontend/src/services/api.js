@@ -2,8 +2,9 @@
  * API service — handles SSE streaming and REST calls to the backend.
  */
 
-const API_BASE = 'http://localhost:8000/api';
-
+const API_BASE = import.meta.env.VITE_API_URL 
+  ? `${import.meta.env.VITE_API_URL}/api` 
+  : 'http://localhost:8000/api';
 /**
  * Send a chat message and receive an SSE stream of events.
  * @param {string} message - The user's message
