@@ -1,0 +1,17 @@
+# Environment files (contains API keys!)
+.env
+backend/.env
+
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.db
+
+# Node
+frontend/node_modules/
+frontend/dist/
+
+# VS Code
+.vscode/
